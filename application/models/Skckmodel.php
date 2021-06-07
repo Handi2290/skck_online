@@ -18,13 +18,31 @@ class Skckmodel extends CI_Model {
 
     function search_skck_registration($id)
     {
-        return $this->db->get_where('skck_registration', array('application_id' => $id))->result();
+        return $this->db->get_where('skck_registration', array('application_id =' => $id))->result();
         // $this->db->where('applicant_id => $id');
         // $this->db->from('skck_registration');
         // $this->db->limit(1);
         // $query = $this->db->get();
 
     }
+
+
+    // Query Baru
+
+    // function search_skck_registration($id)
+    // {
+    //     $this->db->select('*');
+	// 	$this->db->from('skck_registration');                
+	// 	$this->db->where_in('application_id',$id);
+     
+	// 	$query =$this->db->get();
+             
+	// 	if ($query->num_rows()) {
+	// 		return $query->result_array();
+	// 	} else {
+	// 		return 0;
+	// 	}
+    // }
 
     function create_skck_registration($data=array())
     {

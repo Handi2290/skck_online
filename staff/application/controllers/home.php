@@ -59,9 +59,9 @@ class Home extends CI_Controller {
 					
 					$this->db->query("UPDATE skck_administrators SET staff_last_login = NOW() WHERE id = ".$res['id']);
 					
-                    redirect('registration');
+                    redirect('dashboard');
                 } else {
-                    $err['error'] = '<strong>Access Denied</strong> Invalid Username/Password ';
+                    $err['error'] = '<strong>Akses ditolak!</strong> Username dan Password salah! ';
                     $this->load->view('vwLogin', $err);
                 }
             }

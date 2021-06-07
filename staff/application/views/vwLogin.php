@@ -66,15 +66,15 @@
         <div style="text-align: center;">
           <img style="text-align: center;" src="<?php echo base_url('assets/images/logo_polri.png'); ?>" width="200" height="200" >
         </div>
-        <h2 class="form-signin-heading" style="text-align:center;">Silakan Login.</h2>
+        <h2 class="form-signin-heading" style="text-align:center;">Silahkan Login</h2>
         <input type="text" class="form-control" placeholder="Username" name="username" id="username" autofocus>
         <input type="password" id="pass" class="form-control" placeholder="Password" name="password">
         
 		<label class="checkbox">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value="remember-me" id="remember_me">Remember me
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value="remember-me" id="remember_me">Ingat Password
         </label>
 		
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
       </form>
     </div> <!-- /container -->
     <!-- Bootstrap core JavaScript
