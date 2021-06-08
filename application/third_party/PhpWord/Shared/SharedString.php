@@ -18,22 +18,22 @@
 namespace PhpOffice\PhpWord\Shared;
 
 /**
- * Common string functions
+ * Common SharedString functions
  */
-class String
+class SharedString
 {
     /**
      * Control characters array
      *
-     * @var string[]
+     * @var SharedString[]
      */
     private static $controlCharacters = array();
 
     /**
      * Convert from OpenXML escaped control character to PHP control character
      *
-     * @param string $value Value to unescape
-     * @return string
+     * @param SharedString $value Value to unescape
+     * @return SharedString
      */
     public static function controlCharacterOOXML2PHP($value = '')
     {
@@ -47,8 +47,8 @@ class String
     /**
      * Convert from PHP control character to OpenXML escaped control character
      *
-     * @param string $value Value to escape
-     * @return string
+     * @param SharedString $value Value to escape
+     * @return SharedString
      */
     public static function controlCharacterPHP2OOXML($value = '')
     {
@@ -60,9 +60,9 @@ class String
     }
 
     /**
-     * Check if a string contains UTF-8 data
+     * Check if a SharedString contains UTF-8 data
      *
-     * @param string $value
+     * @param SharedString $value
      * @return boolean
      */
     public static function isUTF8($value = '')
@@ -73,8 +73,8 @@ class String
     /**
      * Return UTF8 encoded value
      *
-     * @param string $value
-     * @return string
+     * @param SharedString $value
+     * @return SharedString
      */
     public static function toUTF8($value = '')
     {
@@ -90,8 +90,8 @@ class String
      *
      * The function is splitted to reduce cyclomatic complexity
      *
-     * @param string $text UTF8 text
-     * @return string Unicode text
+     * @param SharedString $text UTF8 text
+     * @return SharedString Unicode text
      * @since 0.11.0
      */
     public static function toUnicode($text)
@@ -102,7 +102,7 @@ class String
     /**
      * Returns unicode array from UTF8 text
      *
-     * @param string $text UTF8 text
+     * @param SharedString $text UTF8 text
      * @return array
      * @since 0.11.0
      * @link http://www.randomchaos.com/documents/?source=php_and_unicode
@@ -143,7 +143,7 @@ class String
      * Returns entites from unicode array
      *
      * @param array $unicode
-     * @return string
+     * @return SharedString
      * @since 0.11.0
      * @link http://www.randomchaos.com/documents/?source=php_and_unicode
      */
@@ -163,8 +163,8 @@ class String
     /**
      * Return name without underscore for < 0.10.0 variable name compatibility
      *
-     * @param string $value
-     * @return string
+     * @param SharedString $value
+     * @return SharedString
      */
     public static function removeUnderscorePrefix($value)
     {

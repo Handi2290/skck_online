@@ -360,3 +360,6 @@ $config['proxy_ips'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
+
+// $config['composer_autoload'] = 'vendor/autoload.php';
+
